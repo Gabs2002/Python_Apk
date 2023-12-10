@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = App Aula Teste
+title = Client Device
 
 # (str) Package name
-package.name = aulaapp
+package.name = myapp
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -37,7 +37,7 @@ version = 1.2
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = kivy==master, https://github.com/kivymd/KivyMD/archive/master.zip
+requirements = python3==3.7.6,kivy,hostpython3==3.7.6,pillow,pyModbusTCP
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -63,7 +63,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 3.7.6
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
